@@ -9,4 +9,5 @@ kubectl create namespace cattle-system
 echo "Deploying Rancher"
 helm install rancher rancher-stable/rancher \
   --namespace cattle-system \
+  --set ingress.ingressClassName=nginx \
   --set bootstrapPassword=admin

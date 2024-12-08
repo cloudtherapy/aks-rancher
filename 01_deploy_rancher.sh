@@ -4,7 +4,7 @@ az group create --name rg-${APP} --location ${LOCATION}
 
 az aks create \
   --resource-group rg-${APP} \
-  --name ${APP}-server \
+  --name ${APP}-aks-cluster \
   --kubernetes-version ${VERSION} \
   --node-count ${NODE_COUNT} \
   --node-vm-size $VM_SIZE

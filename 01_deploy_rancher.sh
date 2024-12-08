@@ -9,4 +9,4 @@ az aks create \
   --node-count ${NODE_COUNT} \
   --node-vm-size $VM_SIZE
 
-  az aks get-credentials --resource-group rg-${APP} --name ${APP}-server
+  az aks get-credentials --resource-group rg-${APP} --name ${APP}-aks-cluster --overwrite-existing 

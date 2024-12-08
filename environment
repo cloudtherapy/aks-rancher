@@ -1,0 +1,5 @@
+APP=rancher
+LOCATION=eastus
+VERSION=1.31
+NODE_COUNT=3
+VM_SIZE=Standard_D2_v3

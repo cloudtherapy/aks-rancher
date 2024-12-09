@@ -11,5 +11,5 @@ echo "Deploying Rancher"
 helm install rancher rancher-stable/rancher \
   --namespace cattle-system \
   --set ingress.ingressClassName=nginx \
-  --set hostname=${IP_ADDRESS}.sslip.io
+  --set hostname=${IP_ADDRESS}.sslip.io \
   --set bootstrapPassword=admin

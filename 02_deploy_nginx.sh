@@ -1,6 +1,6 @@
 . ./environment
 
-echo "Adding helm repo for ingress-nginx"
+echo "Adding helm repo for ingress-nginx and running update"
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
 

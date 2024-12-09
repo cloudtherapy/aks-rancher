@@ -2,6 +2,7 @@
 
 echo "Adding helm repo for Rancher"
 helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
+helm repo update
 
 echo "Create the appropriate namespace"
 kubectl create namespace cattle-system

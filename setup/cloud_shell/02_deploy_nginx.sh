@@ -18,9 +18,3 @@ sleep 10
 
 echo "Get the Public IP address"
 kubectl get service ingress-nginx-controller --namespace=ingress-nginx
-
-echo "Set External IP address from Loadbalancer"
-
-IP_ADDRESS=`kubectl get services --namespace ingress-nginx ingress-nginx-controller --output jsonpath='{.status.loadBalancer.ingress[0].ip}'`
-
-export IP_ADDRESS
